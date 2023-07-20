@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" media="">
+    <link rel="stylesheet" href="./css/paisagem.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="./css/retrato.css"  media="screen and (orientation: portrait)">
+    
+</head>
+<body>
+    <div id="Pagina">
+        <nav>
+            <img id="menuIcon" src="images/menuIcon.svg" alt="menuIcon"  onclick="mostrar()">
+            <ul id="menuOpcoes">
+                <li>Opcoes 1</li>
+                <li>Opcoes 2</li>
+                <li>Opcoes 3</li>
+                <li>Opcoes 4</li>
+                <li>Opcoes 5</li>
+            </ul>
+        </nav>
+        <div id="post">
+            <picture>
+                <source media="(max-width: 730px)" srcset="./images/mulherdancandoMenor.jpg" class="foto">
+                <img src="./images/mulherdancando.jpg" alt="danca" class="foto">
+            </picture>
+            <!-- (primeira opção sem o source srcset) 
+                <img src="./images/mulherdancando.jpg" alt="danca" class="foto">
+             -->
+            <h1>Uma dança na água</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex possimus sunt in recusandae id, libero rem debitis vel veniam perspiciatis maxime nisi atque repudiandae maiores quisquam. Voluptate harum labore laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis doloremque sapiente culpa dolore corporis reiciendis ad temporibus sit recusandae, ipsam necessitatibus impedit inventore nulla commodi? Omnis quaerat officiis eos qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere ipsa minus accusantium in consequatur perspiciatis dolorum eaque repellat sequi assumenda laborum, sed officiis sint velit inventore sapiente modi blanditiis?</p>
+        </div>
+    </div>
+    <script>
+        function mostrar(){
+            if(menuOpcoes.style.display == "none"){
+                menuOpcoes.style.display = "block"
+
+            }
+            else{
+                menuOpcoes.style.display = "none"
+            }
+        }
+
+    </script>
+    
+
+
+</body>
+</html>
